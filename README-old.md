@@ -1,2 +1,0 @@
-# PLPR
-PremierLangagePublicRelation
