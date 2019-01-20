@@ -2,6 +2,12 @@
 PremierLangagePublicRelation
 
 
-<href src="presentation.pdf"> Ecrire un exercice </href>
+# Ecrire un exercice 
 
-<href src="PL_dev_philo.pdf"> Philosophie du Développement de PL </href>
+presentation.pdf 
+
+# Philosophie du Développement de PL
+
+PL_dev_philo.pdf
+
+
