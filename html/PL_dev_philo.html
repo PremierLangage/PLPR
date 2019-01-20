@@ -1,0 +1,122 @@
+<h1 id="le-projet-pl">Le projet PL</h1>
+<p>Premier Langage PL est un exerciseur en ligne basé sur des technologies informatiques récentes</p>
+<p><strong>Grandes lignes philosophiques :</strong></p>
+<ul>
+<li><p>Développé par des enseignants et des étudiants</p></li>
+<li><p>Open-source</p></li>
+<li><p>Développement ouvert et collaboratif</p></li>
+<li><p>Technologies rationnelles et récentes</p></li>
+<li><p>Héritage de l’expérience des projets universitaires</p></li>
+<li><p>Intégration dans l’existant plutôt que recréer</p></li>
+</ul>
+<h1 id="un-nouvel-exerciseur">Un nouvel exerciseur ?</h1>
+<p>Premier langage n’est pas le premier exerciseur en ligne… Mais les technologies, les besoins et les moyens ont évolués.</p>
+<ul>
+<li>Nécessité d’un moteur interne up-to-date.</li>
+</ul>
+<p>À l’heure du machine learning, du big data et des intelligences artificielles, besoin d’un coeur sécurisé, flexible, générique et pouvant tenir la charge.</p>
+<ul>
+<li>Prévoir la pérennité des contenus pédagogiques, réutiliser au maximum les ressources et expériences didactiques.</li>
+</ul>
+<p>Portage de ressources d’autres projets vers PL. Langage déclaratif simple optimisant la ré-utilisation de ressources issues de PL.</p>
+<h1 id="notre-monde-est-peuplé-de-génies-isolés">Notre monde est peuplé de génies isolés…</h1>
+<ul>
+<li><p>On voit une grande expérience disséminée partout en France.<br />
+ (Richesse incroyable dans toutes les matières de voir des profs non informaticiens développant des outils pédagogiques informatiques…) </p></li>
+<li><p>Beaucoup de gens ré-implémentent des outils existants pour leur besoins personnels.<br />
+ (Faute de trouver exactement ce que l’on veut…) </p></li>
+<li><p>Les petits projets ne peuvent pas prévoir leur succession.<br />
+ (Difficulté de développer avec les méthodes pérennisant son travail…) </p></li>
+<li><p>Les projets existants ne sont pas toujours flexibles.<br />
+ (Pilotage du projet, développement fermé, ressources non accessibles…) </p></li>
+<li><p>Dépendre des licences fait mourir certains projets ou créer des situation très pénibles.<br />
+ (Financement de certains projet non pérenne…) </p></li>
+<li><p>Les compétences et les technologies sont pourtant là.<br />
+ (Absence d’un utilitaire open-source online pouvant exécuter de manière sécurisé un très grand nombre d’exercices pédagogiques) </p></li>
+</ul>
+<h1 id="mutualisation-des-ressources">Mutualisation des ressources</h1>
+<p>Exemple de fonctionnalité : dessiner une courbe dans un navigateur web à partir d’une fonction</p>
+<ul>
+<li><p>En math pour les études de fonctions.</p></li>
+<li><p>En chimie pour visualiser l’évolution de la concentration d’un lors d’une réaction.</p></li>
+<li><p>En électronique pour afficher un diagramme de Bode.</p></li>
+<li><p>En physique pour dessiner un diagramme de phase.</p></li>
+<li><p>En biologie pour mesurer l’évolution d’une population de bactérie dans le temps.</p></li>
+<li><p>En histoire pour situer les transitions démographiques des états.</p></li>
+<li><p>etc…</p></li>
+</ul>
+<p>On a tous besoin d’outils de visualisation… Doit-on tous les re-concevoir et les re-coder ?</p>
+<h1 id="architecture-logicielle-de-premier-langage">Architecture logicielle de Premier langage</h1>
+<figure>
+<img src="PL_couches.png" alt="PL est organisé en couches" width="400" /><figcaption>PL est organisé en couches</figcaption>
+</figure>
+<h1 id="le-serveur-pl">Le serveur PL</h1>
+<ul>
+<li><p>Gestions des connexions avec L.T.I.</p></li>
+<li><p>Sécurité : exécute les codes élèves en machines virtuelles</p></li>
+<li><p>Montée en charge : déploie les machines virtuelles avec Docker</p></li>
+<li><p>Data : base de données avec la technologie Django</p></li>
+<li><p>Gros du code en langage Python, nouvelle référence dans l’enseignement</p></li>
+</ul>
+<p> </p>
+<p> </p>
+<h1 id="le-serveur-pl-1">Le serveur PL</h1>
+<ul>
+<li><p>Est conçu par des enseignants-chercheurs en informatique.</p></li>
+<li><p>Est principalement programmé par des étudiants en informatique.</p></li>
+<li><p>Utilise des technos et frameworks up-to-date.</p></li>
+<li><p>Contient le code le plus technique de Premier Langage.</p></li>
+<li><p>Résout des problèmes techniques utiles pour l’enseignant mais l’enseignant ne veut surtout pas y perdre son temps à le développer.</p></li>
+<li><p>C’est le plus gros cadeau que fait PL à la communauté. On ne souhaite pas développer un tel coeur souvent (quand les technos deviennent obsolètes seulement…)</p></li>
+<li><p>Les informaticiens font ce cadeaux mais le besoin de sécurité est aussi un peu leur faute. Exécuter du code source soumis en ligne n’est pas une action anodine.</p></li>
+</ul>
+<h1 id="la-librairie-standard-de-pl">La librairie standard de PL</h1>
+<ul>
+<li><p>Contient des utilitaires techniques pédagogiques utiles au plus grand nombres.</p>
+<ul>
+<li><p>Génération et auto-correction de QCM</p></li>
+<li><p>Afficher des courbes à partir d’une fonction</p></li>
+<li><p>Exercice de pairing en drag’n drop</p></li>
+<li><p>Afficher des images</p></li>
+<li><p>… etc ..</p></li>
+</ul></li>
+<li><p>Propose des programmes de génération d’exercices (des builder) et des programmes d’évaluation des travaux (des grader)</p></li>
+<li><p>Dispose de toute la puissance du langage Python et d’un grand nombre de bibliothèque (numpy, scipy, …)</p></li>
+<li><p>Possibilité de prévoir des appels à des programmes disponibles dans un environnement virtuel (compilateur gcc, bash, …)</p></li>
+<li><p>Contient du code proposé par des power-users : principalement des profs de toute matières à l’aise avec l’informatique.</p></li>
+</ul>
+<h1 id="concept-exo-et-ressources-spécifiques">Concept-exo et ressources spécifiques</h1>
+<ul>
+<li><p>La dernière couche de PL est constituée des ressources pédagogiques finales.</p></li>
+<li><p>Ressources écrites dans un langage déclaratif simple, pas besoin d’être programmeur.</p></li>
+<li><p>Utilisation mutualisée maximale de la librairie standard.</p></li>
+<li><p>Les ressources finales sont appels à des fonctionnalités techniques mais ne contiennent plus que des données pédagogiques pérennes et potentiellement ré-utilisable dans d’autres projets.</p></li>
+<li><p>C’est aussi un supermarché que les profs alimentent mais dans lequel ils peuvent se servir.</p></li>
+<li><p>C’est la partie cruciale à pérenniser voire à enrichir automatiquement si possible avec des ressources venant d’autres projet existant en automatisant la translation.</p></li>
+</ul>
+<h1 id="développement-informatique-et-organisation">Développement informatique et organisation</h1>
+<ul>
+<li><p>Développement collaboratif et ouvert.</p></li>
+<li><p>Développement sur Github.</p></li>
+<li><p>Utilisation des outils de développement open-source rationnel.</p></li>
+<li><p>Décisions prises à la collégiale pour un design flexible, robuste, extensible, générique et adaptatif.</p></li>
+<li><p>Prévoir le futur au maximum. Même prévoir l’après PL avec des stratégies de pérennisation des investissements et ressources pédagogiques.</p></li>
+<li><p>Plus on va vers le coeur, plus les contribution sont techniques. Plus on s’écarte du coeur, plus les contributions sont pédagogiques. Tout le monde peut trouver une place.</p></li>
+</ul>
+<h1 id="un-projet-jeune">Un projet jeune</h1>
+<ul>
+<li><p>PL est incomplet.<br />
+(Longue roadmap mais tout n’est pas fait…)</p></li>
+<li><p>PL est encore très flexible.<br />
+(La conception n’étant pas totalement figée, vous pouvez venir dessiner PL avec nous…)</p></li>
+<li><p>PL peut encore bouger.<br />
+(Les nouveaux contributeurs motivés nous influencent et façonnent PL)</p></li>
+<li><p>PL a et aura encore des bogues.<br />
+(C’est aussi la beauté de la jeunesse…)</p></li>
+<li><p>PL bouge vite.<br />
+(Les bugs sont corrigés rapidement et encore plus vite si demain vous utilisez PL…)</p></li>
+</ul>
+<h1 id="premier-langage">Premier langage</h1>
+<p>Par des profs, pour des profs !</p>
+
+<p>Rejoignez-nous avec vos compétences pour une expérience gagnant-gagnant !</p>

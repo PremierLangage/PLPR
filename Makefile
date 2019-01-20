@@ -6,6 +6,10 @@ presentation.pdf: presentation.md
 PL_dev_philo.pdf: PL_dev_philo.md
 	pandoc -t beamer PL_dev_philo.md -o PL_dev_philo.pdf
 
+
+html: html/presentation.html html/PL_dev_philo.html
+	echo "fini"
+
 html/presentation.html: presentation.md 
 	pandoc presentation.md -o html/presentation.html
 
