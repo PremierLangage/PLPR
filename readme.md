@@ -1,5 +1,5 @@
 % Introduction à l'écriture d'exercices PL
-% Dominique Revuz
+% Dominique Revuz & N Borie
 % Bienvenu à Marne la Vallée
 
 
