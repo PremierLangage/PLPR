@@ -1,0 +1,151 @@
+\documentclass[border=10pt]{article}
+
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% espace entre les lignes.
+\linespread{1.1}
+
+% espacement entre les paragraphes.
+\setlength{\parindent}{10pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[mathcal]{eucal}
+\usepackage[dvips]{graphics}
+
+%\usepackage{theorem}
+
+\usepackage{color}
+
+\usepackage{listings}
+\usepackage{pxfonts}
+
+% Paramètres de listings.
+\lstset{
+    language=C,
+    numbers=left,
+    numberstyle=\footnotesize,
+    stepnumber=1
+}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,shadows,arrows,positioning,graphs}
+\usetikzlibrary{calc,decorations.pathmorphing,intersections}
+\usetikzlibrary{arrows.meta}
+\tikzset{%
+  >={Latex[width=2mm,length=2mm]},
+  % Specifications for style of nodes:
+            base/.style = {rectangle, rounded corners, draw=black,
+                           minimum height=1cm, text centered, font=\sffamily},
+          acteur/.style = {base, fill=yellow!30, minimum width=2cm},
+           other/.style = {base, fill=blue!30},
+             dev/.style = {base, fill=green!30},
+         concept/.style = {base, fill=red!30},
+           proto/.style = {base, fill=orange!50},
+}
+
+
+\title{Architecture logicielle de Premier Langage}
+\author{DR et all.}
+
+\begin{document}    
+
+\maketitle
+
+
+
+\newpage
+
+% Drawing part, node distance is 1.5 cm and every node
+% is prefilled with white background
+\hspace{-2.5cm}\begin{tikzpicture}[node distance=1.5cm,
+    every node/.style={fill=white, font=\sffamily}, align=center]
+
+  \node (user) [acteur] {\textbf{User}};
+  \node (student) [acteur, below of=user, yshift=-8cm] {\textbf{Student}};
+  \node (teacher) [acteur, below of=student, yshift=-4cm] {\textbf{Teacher}};
+
+  \node (wb) [other, right of=user, xshift=1cm] {\textbf{Web }\\\textbf{Browser}};
+  \node (wb2) [other, right of=student, xshift=1cm] {\textbf{Web }\\\textbf{Browser}};
+  \node (wb3) [other, right of=teacher, xshift=1cm] {\textbf{Web }\\\textbf{Browser}};
+
+
+  \node (lms) [other, right of=wb, xshift=2cm, minimum width=2cm, minimum height=1cm] {\textbf{L.M.S.}};
+  \node (ltiauth) [other, right of=lms, xshift=2cm, minimum width=2cm, minimum height=1cm] {\textbf{LTI auth}};
+
+  \node (dashuser) [proto, below of=ltiauth, xshift=-2cm, yshift=-0.75cm, minimum width=2.5cm, minimum height=1cm] {\textbf{Dashboard}};
+  \node (usermana) [proto, below of=dashuser, yshift=0.5cm, minimum width=2.5cm, minimum height=1cm] {user \\management};
+  \node (dashclass) [proto, below of=ltiauth, xshift=2cm, yshift=-0.75cm, minimum width=2.5cm, minimum height=1cm] {\textbf{Dashboard}};
+  \node (classmana) [proto, below of=dashclass, yshift=0.5cm, minimum width=2.5cm, minimum height=1cm] {class \\management};  
+  
+  \node (workflow) [proto, right of=wb2, xshift=2cm, yshift=1.75cm, minimum width=2.5cm, minimum height=2cm] {\textbf{workflow}\\ \textbf{management}};
+  \node (activities) [concept, right of=workflow, xshift=1cm, minimum width=2.5cm, minimum height=2cm] {\textbf{Activities}};
+  \node (playexo) [dev, below of=activities, minimum width=3cm, xshift=-2.25cm, yshift=-2cm, minimum height=2cm] {\textbf{Play}\\\textbf{exercise}};
+  \node (sandbox) [dev, right of=playexo, minimum width=2cm, xshift=1cm, minimum height=2cm] {\textbf{Sandbox}};
+
+  
+
+  \node (gitload) [dev, right of=wb3, xshift=2cm, yshift=0.75cm, minimum width=3cm, minimum height=1.5cm] {\textbf{git load}};
+  \node (editor) [dev, below of=gitload, yshift=-0.25cm, minimum width=3cm, minimum height=2cm] {\textbf{editor}};
+  \node (ask) [proto, right of=editor, xshift=1.5cm, yshift=0.5cm, minimum width=3cm, minimum height=1cm] {\textbf{ASK}};
+  \node (elastic) [proto, right of=editor, xshift=1.5cm, yshift=-0.5cm, minimum width=3cm, minimum height=1cm] {\textbf{Elastic Search}};
+
+  \node (stats) [concept, right of=ask, xshift=3cm, yshift=9cm, minimum height=2cm, minimum width=3cm] {\textbf{Stats}};
+
+  \node (db) [dev, below of=stats, yshift=-3.25cm, xshift=1cm, minimum height=2cm, minimum width=3cm] {\textbf{D.B.}};
+  \node (logs) [dev, left of=db, xshift=-1.5cm, minimum height=2cm, minimum width=1cm] {\textbf{logs}};
+  
+  \node (file) [concept, below of=db, yshift=-3.25cm, xshift=-1cm, minimum height=2cm, minimum width=3cm] {\textbf{File system}};
+  
+  %% %% Étape
+
+  %% %% \draw (db) edge[->, bend left=10] (activite);
+  %% %% \draw (activite) edge[->, bend left=10] (db);
+  %% \draw[->] (super) -- (result);
+  %% \draw[->] (db) -- (activite);
+  %% \draw[->] (db) -- (result);
+  %% \draw[->] (prof) -- (db);
+  %% \draw[->] (playapres) -- (elevefeed);
+
+  \draw[->] (user) -- (wb);
+  \draw[->] (student) -- (wb2);
+  \draw[->] (teacher) -- (wb3);
+
+
+  \draw[->] (wb) -- (lms);
+  \draw (lms) edge[->, bend left=15] (ltiauth);
+  \node (com) [above of=lms, xshift=1.75cm, yshift=-0.75cm] {L.T.I.};
+  \draw (lms) edge[<-, bend right=15] (ltiauth);
+  \node (com) [below of=lms, xshift=1.75cm, yshift=0.75cm] {Marks};
+
+  \draw (ltiauth) edge[->, bend left=20] (dashuser);
+  \draw (ltiauth) edge[->, bend right=20] (dashclass);
+
+  \draw[->] (activities) -- (usermana);
+  \draw[->] (activities) -- (classmana);
+  \draw (stats) edge[->, bend left=10] (usermana);
+  \draw (stats) edge[->, bend right=10] (classmana);
+
+  \draw[<->] (wb2) -- (playexo);
+  \draw[<->] (playexo) -- (workflow);
+
+  \draw[<->] (wb3) -- (gitload);
+  \draw[<->] (wb3) -- (editor);  
+  
+  \draw (playexo) edge[<-, bend right=45] (db);
+  \draw (activities) edge[<-, bend left=15] (db);
+  \draw (ask) edge[->, bend right=20] (db);
+  \draw[<->] (stats) -- (db);
+
+  \draw[->] (file) -- (db);
+  \draw (editor) edge[<->, bend right=45] (file);
+
+  \draw[->] (sandbox) -- (logs);
+  \draw[->] (logs) -- (db);
+  
+\end{tikzpicture}
+
+
+\end{document}
