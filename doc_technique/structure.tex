@@ -1,0 +1,189 @@
+\documentclass[border=10pt]{article}
+
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% espace entre les lignes.
+\linespread{1.1}
+
+% espacement entre les paragraphes.
+\setlength{\parindent}{10pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[mathcal]{eucal}
+\usepackage[dvips]{graphics}
+
+%\usepackage{theorem}
+
+\usepackage{color}
+
+\usepackage{listings}
+\usepackage{pxfonts}
+
+% Paramètres de listings.
+\lstset{
+    language=C,
+    numbers=left,
+    numberstyle=\footnotesize,
+    stepnumber=1
+}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,shadows,arrows,positioning,graphs}
+\usetikzlibrary{calc,decorations.pathmorphing,intersections}
+\usetikzlibrary{arrows.meta}
+\tikzset{%
+  >={Latex[width=2mm,length=2mm]},
+  % Specifications for style of nodes:
+            base/.style = {rectangle, rounded corners, draw=black,
+                           minimum width=4cm, minimum height=1cm,
+                           text centered, font=\sffamily},
+          acteur/.style = {base, fill=yellow!30},
+            data/.style = {base, fill=blue!30},
+         display/.style = {base, fill=green!30},
+         process/.style = {base, fill=red!30},
+}
+
+
+\title{Structuration dans Premier Langage}
+\author{DR et all.}
+
+\begin{document}    
+
+\maketitle
+\tableofcontents
+
+
+
+\newpage
+
+% Drawing part, node distance is 1.5 cm and every node
+% is prefilled with white background
+\hspace{-2.5cm}\begin{tikzpicture}[node distance=1.5cm,
+    every node/.style={fill=white, font=\sffamily}, align=center]
+
+  \node (users) [acteur] {\textbf{Utilisateurs}};
+  \node (serveur) [acteur, right of=users, xshift=4cm] {\textbf{Serveur PL}};
+  \node (sandbox) [acteur, right of=serveur, xshift=4cm] {\textbf{Sandbox}};
+
+  
+  \draw[black,>=stealth',shorten >=1pt,decorate,decoration={snake,amplitude=1.5}] (2.75,0) -- (2.75,-20);
+  \draw[black,>=stealth',shorten >=1pt,decorate,decoration={snake,amplitude=1.5}] (8.25,0) -- (8.25,-20);
+
+  
+  \node (result) [display, below of=serveur, yshift=-1cm] {\textbf{Résultats activité} \\ Visualisation des résultats élèves \\ statistiques sur les ressources};
+
+
+  \node (super) [below of=users, yshift=-1cm] {Enseignant superviseur};
+
+  \node (prof) [below of=super, yshift=-2cm] {Enseignant éditeur};
+  
+
+  \node (eleve) [below of=prof, yshift=-2cm] {L'élève choisit \\ une activité disponible};
+
+  \node (db) [data, below of=result, yshift=-2cm] {\textbf{Base de données} \\ collection d'exercices \\ ressources pédagogiques \\ utilisateurs qualifiés \\ historique d'utilisations};
+  
+  \node (activite) [display, below of=db, yshift=-2cm] {\textbf{Activité} \\ PL propose aux étudiants \\ des activités utilisant les ressources};
+  \node (comactivite) [below of=activite, yshift=0.5cm] {\textcolor{violet}{\texttt{exo.pl, cours.pltp, ...}}};
+  
+  \node (playavant) [display, below of=activite, yshift=-3cm] {\textbf{Jouer l'exercice} \\ Affichage de l'énoncé de l'exercice \\ zone de code pour la réponse};
+  \node (complayavant) [below of=playavant, yshift=0.45cm] {\textcolor{violet}{\texttt{form=@/path/editor.html}}};
+
+  \node (elevepropose) [below of=eleve, yshift=-3cm] {L'élève propose \\ une solution à  \\ l'exercice joué};
+
+
+  \node [rotate=90, right of=super, xshift=-3.2cm, yshift=2.5cm] {\large{\textit{Professeurs}}};
+  \node [rotate=90, right of=elevepropose, xshift=-1.5cm, yshift=2.5cm] {\large{\textit{Élèves utilisateurs}}};
+  \draw[->, dashed] (-2.5,-2.8) -- +(0,2);
+  \draw[->, dashed] (-2.5,-5.5) -- +(0,-2);
+  \draw[->, dashed] (-2.5,-12.1) -- +(0,4);
+  \draw[->, dashed] (-2.5,-15.8) -- +(0,-4);
+  
+  \node (builder) [process, right of=playavant, xshift=4cm, yshift=2.25cm] {\textbf{Builder} \\ Pré-travail pour présenter \\ l'exercice, notament la gestion \\ des parties aléatoires};
+  \node (combuilder) [below of=builder, yshift=0.2cm] {\textcolor{violet}{\texttt{builder=@/path/builder.py}}};
+  
+  \node (playapres) [display, below of=playavant, yshift=-3cm] {\textbf{Jouer la réponse} \\ Affichage du retour à donner \\ à l'élève suivant la réponse \\ qu'il a fournit};
+    \node (complayapres) [below of=playapres, yshift=0.2cm] {\textcolor{violet}{\texttt{templates jinja}}};
+
+  \node (grader) [process, right of=playapres, xshift=4cm, yshift=2.25cm] {\textbf{Grader} \\ Analyse du code de l'étudiant \\ génération de réponses, \\ de notes et de feedback};
+  \node (comgrader) [below of=grader, xshift=0.1cm, yshift=0.22cm] {\textcolor{violet}{\texttt{grader=@/path/grader.py}}};
+  
+  \node (elevefeed) [below of=elevepropose, yshift=-3cm] {Un feedback est \\ proposé à l'élève \\ qui peut réagir \\ en conséquence};
+  
+  %% Étape
+
+  %% \draw (db) edge[->, bend left=10] (activite);
+  %% \draw (activite) edge[->, bend left=10] (db);
+  \draw[->] (super) -- (result);
+  \draw[->] (db) -- (activite);
+  \draw[->] (db) -- (result);
+  \draw[->] (prof) -- (db);
+  \draw[->] (playapres) -- (elevefeed);
+  
+  \draw (activite) edge[->, bend left=30] (builder);
+  \node (com) [right of=activite, xshift=2.75cm, yshift=-0.25cm] {json brut};
+  %% \draw[->] (activite) --  +(5,0) -- node[text width=2.5cm] {json brut} (builder);
+
+  \draw (builder) edge[->, bend right=30] (playavant);
+  \node (com) [left of=builder, xshift=-2.75cm, yshift=-0.25cm] {json préparé};  
+  %% \draw[->] (builder) -- +(-5,0) -- node[text width=2.5cm] {json préparé} (playavant);
+
+  \draw (playavant) edge[->, bend left=30] (grader);
+  \node (com) [right of=playavant, xshift=2.75cm, yshift=-0.25cm] {json préparé \\ + code élève};  
+  %% \draw[->] (playavant) -- +(5,0) -- node[text width=4.4cm] {json préparé + code élève} (grader);
+
+  \draw (grader) edge[->, bend right=30] (playapres);
+  \node (com) [left of=grader, xshift=-2.75cm, yshift=-0.25cm] {json préparé \\ + feedback};    
+  %% \draw[->] (grader) -- +(-5,0) -- node[text width=4.4cm] {json préparé + feedback} (playapres);
+
+  \draw[->] (eleve) -- (activite);
+  \draw[->] (elevepropose) -- (playavant);
+
+  \draw (grader) edge[<->, bend right=90] (db);
+  \node (com) [right of=db, text width=3.5cm, xshift=4cm] {qualifications exos \\ historique de travail};
+
+
+  \draw (playapres) edge[->, bend right=120] (grader);
+  \node (com) [right of=playapres, xshift=4cm, yshift=-1cm] {json préparé \\ + nouveau code élève};
+
+  
+  %% \draw[->]             (start) -- (onCreateBlock);
+  %% \draw[->]     (onCreateBlock) -- (onStartBlock);
+  %% \draw[->]      (onStartBlock) -- (onResumeBlock);
+  %% \draw[->]     (onResumeBlock) -- (activityRuns);
+  %% \draw[->]      (activityRuns) -- node[text width=4cm]
+  %%                                  {Another activity comes in
+  %%                                   front of the activity} (onPauseBlock);
+  %% \draw[->]      (onPauseBlock) -- node {The activity is no longer visible}
+  %%                                  (onStopBlock);
+  %% \draw[->]       (onStopBlock) -- node {The activity is shut down by
+  %%                                  user or system} (onDestroyBlock);
+  %% \draw[->]    (onRestartBlock) -- (onStartBlock);
+  %% \draw[->]       (onStopBlock) -| node[yshift=1.25cm, text width=3cm]
+  %%                                  {The activity comes to the foreground}
+  %%                                  (onRestartBlock);
+  %% \draw[->]    (onDestroyBlock) -- (ActivityDestroyed);
+  %% \draw[->]      (onPauseBlock) -| node(priorityXMemory)
+  %%                                  {higher priority $\rightarrow$ more memory}
+  %%                                  (ActivityEnds);
+  %% \draw           (onStopBlock) -| (priorityXMemory);
+  %% \draw[->]     (ActivityEnds)  |- node [yshift=-2cm, text width=3.1cm]
+  %%                                   {User navigates back to the activity}
+  %%                                   (onCreateBlock);
+  %% \draw[->] (onPauseBlock.east) -- ++(2.6,0) -- ++(0,2) -- ++(0,2) --                
+  %%    node[xshift=1.2cm,yshift=-1.5cm, text width=2.5cm]
+  %%    {The activity comes to the foreground}(onResumeBlock.east);
+\end{tikzpicture}
+
+
+\newpage
+
+\section{L'exercice classique, le fichier .pl}
+
+\section{Le builder}
+
+\section{}
+
+\end{document}
