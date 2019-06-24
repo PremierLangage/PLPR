@@ -130,7 +130,7 @@ Le dictionnaire de l'exercice B.pl
 
 **Info : **l'auteur n'a spécifié que deux clefs en écrivant l'énoncé
 de B mais il a pu possiblement hériter d'un très large contenu situé
-dans un grand nombre de clefs situées dans A.
+dans les clefs spécifiées dans A.
 
 
 # Les élements multilignes 

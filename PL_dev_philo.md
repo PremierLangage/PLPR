@@ -179,7 +179,7 @@ On a tous besoin d'outils de visualisation... Doit-on tous les re-concevoir et l
   profs de toute matières à l'aise avec l'informatique.
 
 
-# Concept-exo et ressources spécifiques
+# Yggdrasil et ressources spécifiques
 
 
 * La dernière couche de PL est constituée des ressources pédagogiques
