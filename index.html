@@ -1,103 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Premier Langage is a platform of exercises for multiple subjects (Mathematics, computer sciences, ...) with auto-correction. It is easy to use for both students and teachers." />
-        <meta name="robots" content="index,follow">
-        <meta name="keywords" content="premier langage,pl,upem,exercise platform,">
-        <meta name="" content="">
-        <meta name="" content="">
-        
-        <title>Premier Langage</title>
-        <style type="text/css">
-        .centered {
-        	text-align: center;
-        }
-        #content {
-        	padding-left: 20%;
-        	padding-right: 20%;
-        }
-        </style>
-    </head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+ <title>Premier Langage - Exerciseur moderne multi-matières par des profs pour des profs
+ </title>
+
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+ <link rel="shortcut icon" href="https://pl.u-pem.fr/static/favicon.ico" type="image/x-icon" />
+
+ <meta property="og:title" content="Premier Langage - Exerciseur moderne multi-matières par des profs pour des profs"/>
+ <meta property="og:type" content="website"/>
+ <meta property="og:url" content="https://premierlangage.github.io/PLPR/"/>
+ <meta property="og:image" content="https://pl.u-pem.fr/static/favicon.ico"/>
+ <meta property="og:site_name" content="Premier Langage - Exerciseur moderne multi-matières par des profs pour des profs"/>
+ <meta property="og:description" content="Premier Langage is a platform of exercises for multiple subjects (Mathematics, computer sciences, ...) with auto-correction. It is easy to use for both students and teachers."/>
+
+ <style type="text/css">
+   .centered {
+   text-align: center;
+   }
+   #content {
+   padding-left: 20%;
+   padding-right: 20%;
+   }
+ </style>
+ 
+</head>
+
+
+<body>  
+  <div>
+
+    <?php include 'head.html'; ?>
     
-    </body>
-        <div id="content">
-        	<h1 class="centered">Premier Langage</h1>
-            <p class="centered">
-                <b><i>By teachers, for teachers</b></i>
-            </p>
-        	<div>
-        		<h2>
-        			What is Premier Langage (PL) ?
-        		</h2>
-        		<p>
-        			PL is a platform of exercises for multiple subjects (Mathematics, computer sciences, ...) with auto-correction. 
-        			It is easy to use for both students and teachers.<br>
-        			We want to allow teachers to create exercises easily by providing them templates for MCQ, drag and drop, cloze test, etc... <br>
-        			We are also providing an easy-to-use language based on Python to create advanced exercises. Teachers will be able to create exercises in python and javascript without loosing integration to the platform. <br>
-        		</p>
-        	</div>
-        	<div>
-        		<h2>
-        			Who are we ?
-        		</h2>
-        		<p>
-        			We are teachers and students of the <a href="http://www.u-pem.fr/">UPEM (Université Paris-Est Marne-la-Vallée)</a>. <br>
-                    The project was initiated by <a href="http://igm.univ-mlv.fr/~dr/">Dominique Revuz</a> and the <a href="http://igm.u-pem.fr/">IGM (Institut Gaspard Monge)</a>
-        		</p>
-        	</div>
-            
-        	<div>
-        		<h2>
-        			What's the philosophie 
-        		</h2>
-        		<p>
-        			La philo de pl (in french):  <a href="./html/PL_dev_philo.html">Pourquoi PL</a></p>
-        	</div>
-        	
-            
-        	<div>
-        		<h2>
-        			What an exercice ?
-        		</h2>
-        		<p>
-        			Presentation :  <a href="./html/presentation.html">Ecrire un exercice</a></p>
-        	</div>
-        	
-            
-        	<div>
-        		<h2>
-        			What is our current roadmap ?
-        		</h2>
-        		<p>
-        			You can find our current roadmap here (in french):  <a href="https://github.com/plgitlogin/premierlangage/wiki/roadmap">Roadmap</a>. A translation in english will be available later.
-        		</p>
-        	</div>
-        	<div>
-        		<h2>
-        			Where is the code ?
-        		</h2>
-        		<p>
-        			You can find the source code on Github: <a href="https://github.com/plgitlogin/premierlangage">Premier Langage</a>.
-        		</p>
-        	</div>
-        	<div>
-        		<h2>
-        			How to contribute ?
-        		</h2>
-        		<p>
-        			You can contribute to the conception of the projet: <a href="https://github.com/plgitlogin/plconception">PL Conception</a>. Ideas about the project will be really appreciated. <br>
-                    You can also fork the Github project.
-        		</p>
-        	</div>
-        	<div>
-        		<h2>
-        			How to install PL ?
-        		</h2>
-        		<p>
-        			You can learn how to install your own PL server <a href="https://github.com/plgitlogin/premierlangage/blob/master/install.md">here.</a>
-        		</p>
-        	</div>
-        </div>
-    </body>
+    <p>
+      Premier Langage est une plateforme d'exercices multi-matières
+      avec auto-correction. Elle se veut simple d'utilisation à la
+      fois pour les élèves et les enseignants. Pour les enseignants,
+      Premier Langage fournit des outils automatiques pour concevoir
+      facilement et rapidement des exercices de technologie classique
+      (QCM, cliquer-glisser, texte à cliquer, notions à reliée deux à
+      deux, ...). Pour les concepteurs experts de ressources
+      pédagogiques, Premier langage offre toute la puissance du
+      langage Python dans un environnement d'exécution
+      sécurisé. Ainsi, il est possible d'appeler des compilateurs et
+      de lancer des exécutions de programme proposé par des élèves,
+      certains exercices charge des bibliothèques Python évolué de
+      calcul comme NumPy et SciPy, ou encore il est possible de
+      charger des applications javascript pour afficher ou faire
+      construire aux élèves des molécules.
+    </p>
+
+
+    <p>
+    Premier Langage est un projet universitaire et communautaire open
+    source initialement lancé à l'Université Paris Est à
+    Marne-la-Vallée
+    par <a href="http://igm.univ-mlv.fr/~dr/">Dominique Revuz</a>
+    et <a href="http://igm.u-pem.fr/">l'I.G.M. (Institut Gaspard
+    Monge)</a>.
+    </p>
+
+
+
+    
+  
+  </div>
+</body>
 </html>
