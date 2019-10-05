@@ -1,0 +1,83 @@
+\documentclass[border=10pt]{article}
+
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% espace entre les lignes.
+\linespread{1.1}
+
+% espacement entre les paragraphes.
+\setlength{\parindent}{10pt}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[mathcal]{eucal}
+\usepackage[dvips]{graphics}
+
+%\usepackage{theorem}
+
+\usepackage{color}
+
+\usepackage{listings}
+\usepackage{pxfonts}
+
+% Paramètres de listings.
+\lstset{
+    language=C,
+    numbers=left,
+    numberstyle=\footnotesize,
+    stepnumber=1
+}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,shadows,arrows,positioning,graphs}
+\usetikzlibrary{calc,decorations.pathmorphing,intersections}
+\usetikzlibrary{arrows.meta}
+\tikzset{%
+  >={Latex[width=2mm,length=2mm]},
+  % Specifications for style of nodes:
+            base/.style = {rectangle, rounded corners, draw=black,
+                           minimum width=4cm, minimum height=1cm,
+                           text centered, font=\sffamily},
+          acteur/.style = {base, fill=yellow!30},
+            data/.style = {base, fill=blue!30},
+         display/.style = {base, fill=green!30},
+         process/.style = {base, fill=red!30},
+}
+
+
+\title{Structuration dans Premier Langage}
+\author{DR et all.}
+
+\begin{document}    
+
+
+% Drawing part, node distance is 1.5 cm and every node
+% is prefilled with white background
+\hspace{-2.5cm}\begin{tikzpicture}[node distance=1.5cm,
+    every node/.style={fill=white, font=\sffamily}, align=left]
+
+  \node (exo) [data] {\underline{Exercice \textbf{.pl}} \\ fichier déclaratif \\ * Titre \\ * Énoncé \\ * Formulaire \\ * ...};
+  \node (play) [data, below of=exo, yshift=-3cm] {\underline{Exercice préparé} \\ même fichier \\ \\ champs en plus \\ valeurs modifiées \\ };
+  \node (eval) [data, below of=play, yshift=-3cm] {\underline{Exercice corrigé} \\ même fichier \\ \\ note générée \\ feedback \\ validation};
+
+  \draw (exo) edge[->, bend left=80] (play);
+  \draw (play) edge[->, bend left=80] (eval);
+
+  \node (com) [right of=exo, xshift=4.5cm, yshift=-2.25cm] {pré-traitement \\ tirage des parties aléatoires \\ Builder};
+  \node (com) [right of=play, xshift=4cm, yshift=-2.25cm] {post-traitement \\ notation et correction \\ Grader};
+
+  \node (brut) [left of=exo, xshift=-5cm] {Produit par \\ un enseignant \\ en amont};
+  \draw (brut) edge[->] (exo);
+
+  \node (aff) [left of=play, xshift=-5cm] {Affichage de l'exercice \\ en attente \\ des réponses élèves};
+  \draw (play) edge[->] (aff);
+
+  \node (feed) [left of=eval, xshift=-5cm] {Un feedback personnalisé \\ est donné \\ à l'élève};
+  \draw (eval) edge[->] (feed);
+
+
+\end{tikzpicture}
+
+\end{document}
