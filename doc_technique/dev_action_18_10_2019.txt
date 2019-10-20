@@ -1,0 +1,69 @@
+nborie@bayer:~/PLPR$ cat combined.txt | cut -d '|' -f 2 | sort | uniq -c | sort -rn
+  34492 Pavell
+  32756 Quentin Coumes
+  13245 Mamadou Cisse
+  10278 root
+   9864 HARDY ELISE
+   8500 Coumes Quentin
+   2520 Nicolas M. Thiéry
+   1599 Dominique Revuz
+   1446 David DOYEN
+   1404 hugo mlodecki
+    859 Dominique REVUZ
+    791 Dominique
+    686 mamadou
+    670 CALLE CHRISTOPHE
+    514 Olivier CHAMPALLE
+    426 LyZeoN
+    395 Antoine MEYER
+    358 Nicolas BORIE
+    341 Florent Hivert
+    340 Marc ZIPSTEIN
+    294 Nicolas Borie
+    239 Douangmala Hugo
+    212 bohraph
+    149 nimdanor
+    146 plgitlogin
+    141 Elaad
+    123 QUENTIN COUMES
+    114 CHRISTOPHE CALLE
+    111 Elaad Furreedan
+     79 hdouangm
+     56 BORIS JABOT
+     46 LyZeon
+     46 ddoyen
+     40 Essox Lucius
+     39 MAMADOU CISSE
+     39 magdalena-kobylanski
+     35 pl-test
+     31 Isabelle NAVIZET
+     29 elisehardy
+     29 ElaadF
+     23 Raphael B
+     20 www-data
+     20 Hugo Mlodecki
+     19 FURREEDAN ELAAD
+     18 Christophe Callé
+     17 dr
+     15 admin
+     12 Fabian REITER
+     11 ahmad nadar
+     10 Olivier BOUILLOT
+      9 BOHORODYCZ RAPHAEL
+      6 ochampal
+      5 pavell
+      5 Marie-Pierre BEAL
+      4 Valentin Belissen
+      4 teacher
+      4 jlebas01
+      4 adminpl
+      3 mk
+      2 Wenjie FANG
+      2 louupem
+      2 herilalaina
+      2 COUMES QUENTIN
+      1 Jérémie LE BASTARD
+      1 JEREMIE LE BASTARD
+      1 Frédéric LE QUERE
+      1 esandier
+      1 cbonaudo
