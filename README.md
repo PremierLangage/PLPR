@@ -1,10 +1,12 @@
 # PLPR
 PremierLangagePublicRelation
 
+[Site de présentation](https://premierlangage.github.io/PLPR/)
 
-# Ecrire un exercice 
+# Documentation 
 
-presentation.pdf 
+
+[Documentation Générale](https://documentationpl.readthedocs.io/fr/latest/)
 
 # Philosophie du Développement de PL
 
