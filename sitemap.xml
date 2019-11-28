@@ -2,37 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://premierlangage.github.io/PLPR/</loc>
-    <lastmod>2019-10-06</lastmod>
+    <lastmod>2019-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>
   <url>
     <loc>https://premierlangage.github.io/PLPR/code_source.html</loc>
-    <lastmod>2019-10-06</lastmod>
+    <lastmod>2019-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://premierlangage.github.io/PLPR/tour_de_pl.html</loc>
-    <lastmod>2019-10-06</lastmod>
+    <lastmod>2019-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://premierlangage.github.io/PLPR/documentation.html</loc>
-    <lastmod>2019-10-06</lastmod>
+    <lastmod>2019-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://premierlangage.github.io/PLPR/librairie.html</loc>
-    <lastmod>2019-10-06</lastmod>
+    <lastmod>2019-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-    <url>
+  <url>
     <loc>https://premierlangage.github.io/PLPR/communaute.html</loc>
-    <lastmod>2019-10-09</lastmod>
+    <lastmod>2019-11-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://premierlangage.github.io/PLPR/anonymous.html</loc>
+    <lastmod>2019-11-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
