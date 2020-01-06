@@ -61,7 +61,7 @@ Ajouts, correction, extensions difficiles.
 
 
 
-Initialement notre objectif était d'avoir des **exercices autocorrigé répétables**.
+Initialement notre objectif était d'avoir des **exercices autocorrigés répétables**.
 
 Soit un outil permettant aux étudiants de valider en autonomie l'acquisition de savoir faire, ou de connaissances.
 
@@ -145,6 +145,8 @@ Un serveur National de Ressource, des serveurs locaux d'Assets.
 
 
 
+# Conclusions
+
 ***
 
 ## PL une plateforme intégrante 
@@ -155,8 +157,10 @@ Un serveur National de Ressource, des serveurs locaux d'Assets.
 * sandbox variées (EBoP:exercices based on proof, SQL, autres modèles ) 
 * Applets javacript  
 * la possibilité d'ajout par plugins django, plugins python, plugins javascript
-* une API générale d'accès aux service 
+* une API générale d'accès aux services 
 * une communication instantanée des utilisateurs et des développeurs
+* récuperation de formats variés: AMC, Exo7, GIFT, LAB3D? 
+* Normalisation des notations 
 * GPL, CC
 
 ***
@@ -194,6 +198,16 @@ Pour les enseignants : un lieux de rencontre, de ressources (exercices, AAV, act
 
 
 
+***
+
+# PL's programming language is Python 
+
+Python is a widely used language: One of the top 5 most used programming languages, with millions of programmers
+“” Google has made no secret of the fact they use Python a lot for a number of internal projects. Even knowing that, once I was an employee, I was amazed at how much Python code there actually is in the Google source code system.””
+Guido van Rossum Creator of Python 
+Thousands of third-party Python packages available: databases, graphics, network, parallel computing, ...
+Easy integration of C/C++/Fortran/...libraries 
+Cython: Python is a major platform for scientific computing
 
 
 
