@@ -6,8 +6,8 @@ author:
 - David Doyen
 - Magdalena Kobylanski
 - Dominique Revuz 
-theme: Darmstadt
-colortheme: seagull
+theme: Ilmenau
+colortheme: orchid
 fonttheme: structuresmallcapsserif 
 title: Vers une plate-forme libre d’exercices auto-corrigés répétables et d’outils pédagogiques
 subtitle: exercices autocorrigé répétables 
@@ -42,111 +42,48 @@ subtitle: exercices autocorrigé répétables
 # objectifs initiaux de la plateforme PL
 
 
-## Un outil de suivi des connaissances 
-
-- Référentiel 
-- Grains 
-- Ontologie 
-- Automates, graphes,
-- (Des prototypes encore en vie ... )
-
++ Un outil de suivi des connaissances
++ mes Echecs productifs
++ exerciseur
++ WIMS, dette
++ Répétable
++ langage de programmation 
 
 
-## Exercices Autocorrigés Répétables
-
-Initialement notre objectif était d'avoir des **exercices autocorrigés répétables**.
-
-Soit un outil permettant aux étudiants de valider en autonomie l'acquisition de savoir faire, ou de connaissances.
-
-Autocorrigés : car nous ne sommes pas assez disponibles.
-
-Répétables : pouvoir se tromper mais pas éviter la difficulté.
-
-Fournir le même service que WIMS d'aléa contrôlé.
-
-***
 
 
-# Un héritage WIMS
-
-Un outil qui fonctionne ! 
-
-Qualité: 
-
-- partage
-- référencement
-- accessibilité
-- pédagogie / didactique
-- efficacité 
-
-Mais une dette technique importante qui ne permet plus de le faire évoluer.
-
-Ajouts, corrections, extensions informatiquement difficiles.
-
-
-# Objectif 2020
+# Objectifs Généraux 
 
 Notre objectif une plateforme évolutive, gratuite, ouverte, partagée et communautaire, basée sur des fondements informatiques et scientifiques solides, une approche didactique et pédagogique inclusive où l’intelligence collective peut s’exprimer à son maximum. 
 
 ***
+# Objectifs Généraux 
 
-## Gratuite 
- Une plateforme d’enseignement ce doit d’être accessible au plus grand nombre et donc gratuite à la fois pour les enseignants et les apprenants. L’architecture permet à un enseignant de télécharger la plateforme pour un usage local (une seule machine ou un réseau local). La plateforme a une licence Cecill-B, les ressources la licence CC-by-SA2 pour partager et protéger le travail. 
++ Gratuite 
 
-## Ouverte 
- Notre développement est dans le cadre AGPL qui assure une protection juridique et permet aux développeurs de pouvoir donner de leur temps sans avoir risques. C’est le principe des logiciels libres et ouverts. Un des objectifs a cours terme est d’ouvrir plus largement à la communauté le développement logiciel.
++ Ouverte 
 
-***
++ Évolutive 
+ 
++ Partagée et communautaire 
 
-## Évolutive 
- l’architecture de la plateforme est basée sur un ensemble de systèmes de développements (applications, plugins, héritage) qui privilégie la réutilisation et l’extensibilité sans compromettre portabilité, fiabilité, sécurité (en particulier la RGPD), et permet le changement d’échelle. 
-
-## Partagée et communautaire 
-
-Plusieurs types de communautés doivent s’agrégées autour du projet, une communauté de développeurs pour le logiciel de la plateforme, une communauté de créateurs pour le développement des nouvelles activités pédagogiques, des communautés disciplinaires pour la production des ressources. La question des communautés est un des points clefs du projet : gouvernance, gestion, mise en œuvre d’une stratégie d’intelligence collective.
-
-***
-
-## Fondement scientifiques solides 
- L’utilité d’une plateforme d’exercices autocorrigé n’est plus à démontrer, le projet est déjà capable de fournir ce service. L’approche didactique que nous voulons mettre en place est basé sur les travaux de l’équipe belge du FA2L. Notre équipe de projet est multidisciplinaire pour avoir un ensemble d’éclairage et un pilotage scientifique solide. Le besoin d’une démarche scientifique nous a fait poser des principes scientifiques qui orientent la conception et le développement du logiciel.
++ Fondement scientifiques solides 
 
 ***
 
 # Nos principes
 
-## Le Patron c'est l'enseignant 
 
-Au coeur du dispositif il y a l'apprenant mais pour manipuler l'outil numérique c'est le métier de l'enseignant. L’enseignant est le patron d’une session de formation. Les enseignants sont au cœur de l’enseignement c’est eux qui construisent le passage entre l’apprenant et la connaissance, l’outil se veut un assistant à l’enseignant et non pas une substitution. À terme la plateforme pourra, bien sur servir d’outil pour construire des MOOC (Massive Online Open Courses), ce n’est pas l’objectif premier.
+- Le Patron c'est l'enseignant 
+- La compétence disciplinaire prime 
+- La liberté pédagogique 
+- Solide en terme informatique 
+- Développé par des enseignants et des étudiants
+- Technologies rationnelles et récentes
+- Héritage de l'expérience des projets universitaires
+- Intégration dans l'existant (moodle) plutôt que recréer (NIH) 
 
-***
 
-# Nos principes
-
-## La compétence disciplinaire prime 
-Nous suivons le principe que « Pour enseigner des mathématiques il faut connaître des mathématiques », ce qui signifie que les enseignants d’une discipline sont les plus à même de savoir quelle activité est adéquate, et donc les premiers créateurs des exercices et des ressources ; il faut donc que la plateforme permettre de répondre aux besoins spécifiques de chaque discipline. et permette à la créativité pédagogique et didactique des enseignants de s’exprimer dans la création de ressources adéquates. 
-En particulier les études menées dans le cadre du projet “WIMS-édition” (AMI 2018-2020) auquel je participe, ont mis en évidence un certains nombre d’éléments concernant l’éditorialisation des ressources que la plate-forme que je développe permet d’intégrer [6]
-
-***
-
-# Nos principes
-
-## La liberté pédagogique 
-La pédagogie ne doit pas être dictée par les contraintes de la plateforme, c’est au contraire la plateforme qui doit répondre aux besoins de l’enseignant. En particulier l’enseignant doit être dans un cadre permettant plus facilement :
-de s’approprier le contenu disciplinaire,
-d’adapter les activités aux capacités des apprenants,
-d’adapter l’ordre des connaissances proposé pour se synchroniser aux autres enseignements et activités non disciplinaires, 
-de choisir entre des méthodes d’ancrage mémoriel, de pédagogie de la maîtrise, de pédagogie par problèmes, pédagogie par projets, remédiation, etc. 
-Nous souhaitons avoir une approche très prudente sur l’usage de profils d’étudiants, dont la valeur scientifique reste souvent à démontrer.
-
-***
-
-# Nos principes
-
-## Solide en terme informatique 
-Les fondamentaux informatique : la sécurité, l’ergonomie, la robustesse, la capacité à monter en charge et à être déployée sur du cloud, l’évolutivité, conformité à la loi et aux réglementations (RGPD, CNIL).
-La didactique des disciplines est un phare pour la mise en place d’activités efficaces.
-La plateforme doit formaliser l’expérimentation pédagogique et fournir un cadre et des outils pour des expérimentations et ce dans les cadres légaux correspondants. 
-Je participe également au projet “WIMS-évolution”(PSI 2018-2020). La plate-forme WIMS, créée en 1998 par Xiao Gang est en effet un exemple dont nous nous inspirons. Cette plate-forme a de nombreux avantages et regroupe de très nombreuses qualités. Mais pour permettre d’aller plus loin, après avoir mener un certain nombre d’expérience nous avons pris le parti de privilégier la (ré)-écriture d’un nouveau logiciel. En effet les bases architecturales et des modalités de développement de WIMS ne lui permettent pas d’évoluer.
 
 ***
 
@@ -163,10 +100,10 @@ La fiabilité est une fonction de l'usage, plus notre logiciel sera utilisé plu
 
 ## Efficacité 
 
-Nos choix techniques ne nous ont pas encore trahi.
-Python3 et le framework Django.
+Nos choix techniques:Python3 et le framework Django, ne nous ont pas encore trahi.
 
 ***
+
 ## Capacité Fonctionnelle
 
 Nous visons pertinence, exactitude, interopérabilité, sécurité et de conformité.
@@ -183,63 +120,95 @@ un déploiement sur docker.
 
 ***
 
-# Les objectif de l'utisateur enseignant 
+# Objectif 2020
 
-1) Fournir des activités pédagogiques à ces élèves.
-    a) Trouver des ressources
-    b) Structurer les ressources
-    c) Ecrire, modifier et adapter des ressources
-2) Faire le suivi de l'enseignement 
-    a) individuel 
-    b) Collectif
-3) Reporting
-4) Constuire son cours dans une formation. 
-5) Participer a une communauté scientifique 
++ Une pédagogie alignée (triforce)
++ intégration du suivi individuel et collectif
++ création d'un outil search and compose 
++ organisation des ressources 
++ Deux types des serveurs  Assets Resources 
++ Développement de la communauté
 
 
+#  Une pédagogie alignée
+
+
+\begin{minipage}{8cm}
+\includegraphics[width=0.5\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/triforcePL.png}
+\end{minipage}\hspace{-4cm}\begin{minipage}{6cm}\fbox{\begin{tabular}{@{}c@{}}
+ Aquis/Objectifs d'apprentissage \\
+ Activité pour l'atteindre \\
+ Evaluation pour valider l'aquisition
+ \end{tabular}}
+\end{minipage}
+\centering
+Une pédagogie alignée la "triforce".
+
+
+# Notion centrale d'objectifs (OAV, AAV)
+
+La notion d'AAV est basé sur une idée d'objectivation de l'acquisition
+ d'une connaissance, un savoir faire, une compétence.
+Pour cela on va exprimer l'objectif de formation sous forme d'une phrase explicitant ce que l'on peut observer cher l'apprenant qui nous permet de valider (automatiquement ou humainement) l'acquisition.
+
+
+# Canvas FA2L des AaV
+
+\includegraphics[width=0.8\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/canvasAAV.png}
+
+
+#  intégration du suivi individuel et collectif
+
+\includegraphics[width=0.8\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/aavSuivi.png}
+
+Organisation arborescente. Acquis/en cours/pas acquis/non débuté.
+
+# Idées pour le suivi collectif 
+
+\includegraphics[width=0.8\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/suiviCollectif.png}
+
+
+# organisation des ressources 
+
+Les resources sont partagées CC-by-SA, l'édition concurente est donc possible, 
+la base de donnée gère la concurence par des numéros de version.
+En cas d'édition concurente un éditeur de différences est proposé à l'utilisateur. 
+
+Les ressources ont des systèmes de d'étiquetages: 
+- Etiquetage scientifique : ComputerScience/Programming/Python/Functions/Return Value/...
+- Etiquetage de niveau scolaire: cp/ce1/ce2/..../M2/D 
+- Etiquetage de niveau de bloom: reconnaissance/usage/composition/analyse/critique/création
+- Type: lecture, exo, quiz, calcul, raisonnement, composition, etc
+
+# création d'un outil search and compose 
+
+Objectif je suis en cours j'ai besoin d'une ressource sur un sujet.
+ J'ai donc déjà rempli en partie l'étiquetage scientifique mon cours est déjà étiqueté : ComputerScience/Programming/Python.
+
+Je souhaite un exercice ou une feuille.
+
+Je cherche quel que chose sur les fonctions.
+
+Le système cherche soit un AAV soit un exercie soit une feuille. 
+
+Le résultat de la recherche est une liste de ressources.
+Je peux inserer (drag & drop) dans mon cours les ressources qui me conviennent.
+
+Si le resultat est un AAV ili me donne accès au O&R Objectif & Ressource, une partie à la stackoverflow du site.
+
+De nouveau je peux récuperer une ressource et la placer dans mon cours.
+
+ 
 
 
 
 
 
+# Deux types des serveurs  Assets Resources 
 
-# Pourquoi ne pas profiter des avancées en Science ?
+Pour gérer la montée encharge et   
 
-* Informatique et TIC
-* Science de l'éducation
-* Sciences humaines : intelligence collective 
-
-
-***
-
-# Informatique et TIC
-
-Premier Langage PL est un exerciseur en ligne basé sur des **technologies informatiques récentes**
-
-
-**Grandes lignes philosophiques :**
-
-* Développé par des enseignants et des étudiants
-
-* Open-source (CecillB)
-
-* Développement ouvert et collaboratif (pas assez)
-
-* Technologies rationnelles et récentes
-
-* Héritage de l'expérience des projets universitaires
-
-* Intégration dans l'existant (moodle) plutôt que recréer (NIH) 
-
-
-***
-
-# OAV
-
-
-Objectifs d'apprentissage Visées -> Acquis d'apprentissage Visées
-
-Ecrire 
++ Développement de la communauté
 
 
 ***
@@ -247,16 +216,7 @@ Ecrire
 # Science de l'éducation
 
 
-\begin{minipage}{8cm}
-\includegraphics[width=0.5\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/triforcePL.png}
-\end{minipage}\hspace{-4cm}\begin{minipage}{6cm}\fbox{\begin{tabular}{@{}c@{}}
- Aquis d'apprentissage \\
- Activité pour l'ateindre \\
- Evaluation pour le validé
- \end{tabular}}
-\end{minipage}
-\centering
-Une pédagogie alignée la "triforce".
+
 
 
 
@@ -391,7 +351,21 @@ Le jury est fait avec des AAV.
 ***
 
 
-***
-## Screen Shots
+# Conception
 
-% \include{ScreenShots.tex}
+***
+
+# Les objectifs de l'utisateur enseignant 
+
+1) Fournir des activités pédagogiques à ces élèves.
+    a) Trouver des ressources
+    b) Structurer les ressources
+    c) Ecrire, modifier et adapter des ressources
+2) Faire le suivi de l'enseignement 
+    a) individuel 
+    b) Collectif
+3) Reporting
+4) Constuire son cours dans une formation. 
+5) Participer a une communauté scientifique 
+
+
