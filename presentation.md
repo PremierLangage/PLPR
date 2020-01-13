@@ -1,22 +1,22 @@
 
 ---
 author:
-- Magdalena Kobylanski
 - Nicolas Borie
+- Olivier Champale
+- David Doyen
+- Magdalena Kobylanski
 - Dominique Revuz 
 theme: Darmstadt
 colortheme: seagull
 fonttheme: structuresmallcapsserif 
-title: Une plateforme partagée PL-(wims)
-subtitle: exercices autocorrigé répétables
+title: Vers une plate-forme libre d’exercices auto-corrigés répétables et d’outils pédagogiques
+subtitle: exercices autocorrigé répétables 
 ...
 
-
-
-# Pourquoi
-
 ***
-## Pourquoi une plateforme
+
+
+# Pourquoi une plateforme
 
 **Des étudiants ** 
 
@@ -25,57 +25,185 @@ subtitle: exercices autocorrigé répétables
 - Très Nombreux (L1 dans chaque licences)
 - Ayant de mauvaises stratégies d'apprentissage 
 - Ayant Grands besoins de feedback (réguliers et personnalisés)
-- Souhaitant d'autres pédagogies, désynchronisés, inversés,  autonomes 
+- Souhaitant d'autres pédagogies, désynchronisés, inversés, autonomes 
 
-***
-
-## Pourquoi une plateforme
 
 **Des enseignants**
 
 - Pas assez nombreux, l'informatique est spécialement sous dotée
-- Débordés
 - Pas amateurs de correction de copies 
 - Besoin d'outils de synchronisation pour rationaliser les
-  interventions des grosses équipes pédagogiques
+ interventions des grosses équipes pédagogiques
 - Mettre les élèves au **travail** ! qqcvd
 
-***
 
-## Un héritage WIMS
 
-Un outil qui fonctionne 
 
-Qualité: partage / référencement / accèssibilité / pédagogie / efficacité 
+# objectifs initiaux de la plateforme PL
 
-Mais une dette technique importante qui ne permet plus de le faire évoluer.
 
-Ajouts, correction, extensions difficiles. 
+## Un outil de suivi des connaissances 
 
-# objectifs de la plateforme PL
+- Référentiel 
+- Grains 
+- Ontologie 
+- Automates, graphes,
+- (Des prototypes encore en vie ... )
 
-***
 
 
 ## Exercices Autocorrigés Répétables
-
-
 
 Initialement notre objectif était d'avoir des **exercices autocorrigés répétables**.
 
 Soit un outil permettant aux étudiants de valider en autonomie l'acquisition de savoir faire, ou de connaissances.
 
-Autocorrigés : car nous ne sommes pas asser disponibles.
+Autocorrigés : car nous ne sommes pas assez disponibles.
 
 Répétables : pouvoir se tromper mais pas éviter la difficulté.
 
 Fournir le même service que WIMS d'aléa contrôlé.
 
+***
+
+
+# Un héritage WIMS
+
+Un outil qui fonctionne ! 
+
+Qualité: 
+
+- partage
+- référencement
+- accessibilité
+- pédagogie / didactique
+- efficacité 
+
+Mais une dette technique importante qui ne permet plus de le faire évoluer.
+
+Ajouts, corrections, extensions informatiquement difficiles.
+
+
+# Objectif 2020
+
+Notre objectif une plateforme évolutive, gratuite, ouverte, partagée et communautaire, basée sur des fondements informatiques et scientifiques solides, une approche didactique et pédagogique inclusive où l’intelligence collective peut s’exprimer à son maximum. 
+
+***
+
+## Gratuite 
+ Une plateforme d’enseignement ce doit d’être accessible au plus grand nombre et donc gratuite à la fois pour les enseignants et les apprenants. L’architecture permet à un enseignant de télécharger la plateforme pour un usage local (une seule machine ou un réseau local). La plateforme a une licence Cecill-B, les ressources la licence CC-by-SA2 pour partager et protéger le travail. 
+
+## Ouverte 
+ Notre développement est dans le cadre AGPL qui assure une protection juridique et permet aux développeurs de pouvoir donner de leur temps sans avoir risques. C’est le principe des logiciels libres et ouverts. Un des objectifs a cours terme est d’ouvrir plus largement à la communauté le développement logiciel.
+
+***
+
+## Évolutive 
+ l’architecture de la plateforme est basée sur un ensemble de systèmes de développements (applications, plugins, héritage) qui privilégie la réutilisation et l’extensibilité sans compromettre portabilité, fiabilité, sécurité (en particulier la RGPD), et permet le changement d’échelle. 
+
+## Partagée et communautaire 
+
+Plusieurs types de communautés doivent s’agrégées autour du projet, une communauté de développeurs pour le logiciel de la plateforme, une communauté de créateurs pour le développement des nouvelles activités pédagogiques, des communautés disciplinaires pour la production des ressources. La question des communautés est un des points clefs du projet : gouvernance, gestion, mise en œuvre d’une stratégie d’intelligence collective.
+
+***
+
+## Fondement scientifiques solides 
+ L’utilité d’une plateforme d’exercices autocorrigé n’est plus à démontrer, le projet est déjà capable de fournir ce service. L’approche didactique que nous voulons mettre en place est basé sur les travaux de l’équipe belge du FA2L. Notre équipe de projet est multidisciplinaire pour avoir un ensemble d’éclairage et un pilotage scientifique solide. Le besoin d’une démarche scientifique nous a fait poser des principes scientifiques qui orientent la conception et le développement du logiciel.
+
+***
+
+# Nos principes
+
+## Le Patron c'est l'enseignant 
+
+Au coeur du dispositif il y a l'apprenant mais pour manipuler l'outil numérique c'est le métier de l'enseignant. L’enseignant est le patron d’une session de formation. Les enseignants sont au cœur de l’enseignement c’est eux qui construisent le passage entre l’apprenant et la connaissance, l’outil se veut un assistant à l’enseignant et non pas une substitution. À terme la plateforme pourra, bien sur servir d’outil pour construire des MOOC (Massive Online Open Courses), ce n’est pas l’objectif premier.
+
+***
+
+# Nos principes
+
+## La compétence disciplinaire prime 
+Nous suivons le principe que « Pour enseigner des mathématiques il faut connaître des mathématiques », ce qui signifie que les enseignants d’une discipline sont les plus à même de savoir quelle activité est adéquate, et donc les premiers créateurs des exercices et des ressources ; il faut donc que la plateforme permettre de répondre aux besoins spécifiques de chaque discipline. et permette à la créativité pédagogique et didactique des enseignants de s’exprimer dans la création de ressources adéquates. 
+En particulier les études menées dans le cadre du projet “WIMS-édition” (AMI 2018-2020) auquel je participe, ont mis en évidence un certains nombre d’éléments concernant l’éditorialisation des ressources que la plate-forme que je développe permet d’intégrer [6]
+
+***
+
+# Nos principes
+
+## La liberté pédagogique 
+La pédagogie ne doit pas être dictée par les contraintes de la plateforme, c’est au contraire la plateforme qui doit répondre aux besoins de l’enseignant. En particulier l’enseignant doit être dans un cadre permettant plus facilement :
+de s’approprier le contenu disciplinaire,
+d’adapter les activités aux capacités des apprenants,
+d’adapter l’ordre des connaissances proposé pour se synchroniser aux autres enseignements et activités non disciplinaires, 
+de choisir entre des méthodes d’ancrage mémoriel, de pédagogie de la maîtrise, de pédagogie par problèmes, pédagogie par projets, remédiation, etc. 
+Nous souhaitons avoir une approche très prudente sur l’usage de profils d’étudiants, dont la valeur scientifique reste souvent à démontrer.
+
+***
+
+# Nos principes
+
+## Solide en terme informatique 
+Les fondamentaux informatique : la sécurité, l’ergonomie, la robustesse, la capacité à monter en charge et à être déployée sur du cloud, l’évolutivité, conformité à la loi et aux réglementations (RGPD, CNIL).
+La didactique des disciplines est un phare pour la mise en place d’activités efficaces.
+La plateforme doit formaliser l’expérimentation pédagogique et fournir un cadre et des outils pour des expérimentations et ce dans les cadres légaux correspondants. 
+Je participe également au projet “WIMS-évolution”(PSI 2018-2020). La plate-forme WIMS, créée en 1998 par Xiao Gang est en effet un exemple dont nous nous inspirons. Cette plate-forme a de nombreux avantages et regroupe de très nombreuses qualités. Mais pour permettre d’aller plus loin, après avoir mener un certain nombre d’expérience nous avons pris le parti de privilégier la (ré)-écriture d’un nouveau logiciel. En effet les bases architecturales et des modalités de développement de WIMS ne lui permettent pas d’évoluer.
+
+***
+
+# une plateforme de qualité 
+
+## Ergonomique 
+Auto-apprentissage de l'usage de la plateforme,
+langage de programmation des exercices simple et extensible,
+Formulaire de création des exercices standards,
+
+## Fiabilité
+
+La fiabilité est une fonction de l'usage, plus notre logiciel sera utilisé plus il sera fiable (Méthode MS).
+
+## Efficacité 
+
+Nos choix techniques ne nous ont pas encore trahi.
+Python3 et le framework Django.
+
+***
+## Capacité Fonctionnelle
+
+Nous visons pertinence, exactitude, interopérabilité, sécurité et de conformité.
+
+## Maintenabilité
+
+C'est notre préoccupation première et notre approche est architecturale.
+
+## Portabilité 
+
+Pour s'éviter des problèmes de gestion de portabilité a travers différents système, deux solutions stratégique (un server de ressource centrale/unique),
+un déploiement sur docker.
 
 
 ***
 
-## Pourquoi ne pas profiter des avancées en Science ?
+# Les objectif de l'utisateur enseignant 
+
+1) Fournir des activités pédagogiques à ces élèves.
+    a) Trouver des ressources
+    b) Structurer les ressources
+    c) Ecrire, modifier et adapter des ressources
+2) Faire le suivi de l'enseignement 
+    a) individuel 
+    b) Collectif
+3) Reporting
+4) Constuire son cours dans une formation. 
+5) Participer a une communauté scientifique 
+
+
+
+
+
+
+
+
+# Pourquoi ne pas profiter des avancées en Science ?
 
 * Informatique et TIC
 * Science de l'éducation
@@ -84,7 +212,7 @@ Fournir le même service que WIMS d'aléa contrôlé.
 
 ***
 
-## Informatique  et TIC
+# Informatique et TIC
 
 Premier Langage PL est un exerciseur en ligne basé sur des **technologies informatiques récentes**
 
@@ -93,23 +221,31 @@ Premier Langage PL est un exerciseur en ligne basé sur des **technologies infor
 
 * Développé par des enseignants et des étudiants
 
-* Open-source (MIT ou GPL3)
+* Open-source (CecillB)
 
-* Développement ouvert et collaboratif 
+* Développement ouvert et collaboratif (pas assez)
 
 * Technologies rationnelles et récentes
 
 * Héritage de l'expérience des projets universitaires
 
-* Intégration dans l'existant plutôt que recréer (NIH)
+* Intégration dans l'existant (moodle) plutôt que recréer (NIH) 
 
 
 ***
 
-## Science de l'éducation
+# OAV
 
-\centering
-Une pédagogie alignée la "triforce".
+
+Objectifs d'apprentissage Visées -> Acquis d'apprentissage Visées
+
+Ecrire 
+
+
+***
+
+# Science de l'éducation
+
 
 \begin{minipage}{8cm}
 \includegraphics[width=0.5\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/triforcePL.png}
@@ -117,45 +253,49 @@ Une pédagogie alignée la "triforce".
  Aquis d'apprentissage \\
  Activité pour l'ateindre \\
  Evaluation pour le validé
-  \end{tabular}}
+ \end{tabular}}
 \end{minipage}
+\centering
+Une pédagogie alignée la "triforce".
 
 
-***
-
-## Sciences humaines : intelligence collective 
-
-* Bazards ou Cathédrales.
-* Faire émerger des ressources de grande qualité.
-* Comment accepter tout le monde mais structurer la production.
 
 ***
 
-## Utiliser l'intelligence collective 
+# Utiliser l'intelligence collective 
 
 Définir une éditorialisation efficace qui permet de produire et qualifier les ressources.
 
+* suffisssament modulaire
+* foisonement de petites actions (validation, correction, idée, code, classement) wikipedia 
 * conserver l'ouverture et le partage de WIMS
 * qualification par l'usage: ce qui sert et ce qui est utile 
 * qualification par l'expertise (cercle, karma, savante)
 * rôles multiples -> il ne faut pas tout savoir 
-* foisonement de petites actions (validation, correction, idée, code, classement) wikipedia 
-
-Un serveur National de Ressource, des serveurs locaux d'Assets. 
 
 
 
-# Conclusions
+*** 
+
+# Organisation globale 
+
+Pour assurer le partage la création et la curation des Ressources.
+
+Il est nécessaire d'avoir un **serveur National de Ressource** : pl.u-pem.fr
+
+Pour assurer la monté en charge et répartir la gestion administrative du serveur il faut avoir **serveurs locaux d'Assets**. 
+
+  Asset = Instanciation locale d'une Ressource.
 
 ***
 
-## PL une plateforme intégrante 
+# PL une plateforme intégrante 
 
 * middleware en python3 
 * LTI (interopérabilité des plateformes d'enseignement: moodle, claroline, ...)
 * WIMS (les exercices de WIMS accessibles)
 * sandbox variées (EBoP:exercices based on proof, SQL, autres modèles ) 
-* Applets javacript  
+* Applets javacript 
 * la possibilité d'ajout par plugins django, plugins python, plugins javascript
 * une API générale d'accès aux services 
 * une communication instantanée des utilisateurs et des développeurs
@@ -165,17 +305,18 @@ Un serveur National de Ressource, des serveurs locaux d'Assets.
 
 ***
 
-## Search & Compose 
+# Search & Compose 
 
 Rapatriment Multi-echelles des Ressources. 
 
-Notre mission 2019/2020.
+
+
 
 
 
 ***
 
-## Une communauté 
+# Une communauté 
 
 
 Vous si vous le voulez !
@@ -191,7 +332,7 @@ password EssoxLucius1
 
 
 ***
-## PL 2
+# PL 2
 Pour les étudiants : désynchronisation, essai erreur, métacognition (temps, profondeur).
 
 Pour les enseignants : un lieux de rencontre, de ressources (exercices, AAV, activités, évaluations, cours,etc).
@@ -212,404 +353,45 @@ Cython: Python is a major platform for scientific computing
 
 
 
-# Ecrire des exercices 
-
-***
-
-## Présentation des Exercices PL
 
 
-- Permettre à des étudiants de s'entraîner avec des exercices
-  auto corrigés répétables.
-
-\smallskip
+  
 
 
-- Proposer des exercices ou l'ordinateur calcule les réponses, donne
-  des retours, conseil et valide le travail de l'étudiant.
-
-\smallskip
-
-- L'étudiant a besoin d'évaluations critiques régulières de son
-  travail, pour ainsi pouvoir identifier ses erreurs et apprendre de
-  celles-ci.
-
-\smallskip
-
-- Proposition de feedback (évaluations, critiques, remarques) plus
-  riches qu'une simple évaluation correct/faux. Mise en relief et
-  exploitation globale du travail de l'apprenant (dans le temps, sur
-  plusieurs matières, etc).
-
-***
-
-## Stratégie générale 
-
-
-Les exercices doivent être \color{blue}construits \color{black}, c'est
-à dire qu'une partie de l'exercice doit être généré au moment où il
-est proposé à l'élève. Nous utiliserons le terme de
-\color{red}builder \color{black}  pour désigner le programme qui réalise
-cette construction.
-
-Deuxièmement nous voulons pouvoir: 
-
-* Vérifier la réponse. 
-* Produire un feedback. 
-* Modifier la question pour fournir plus d'aide. Pour de la programmation, permettre de corriger les erreurs syntaxiques.
-* Produire une note.
-
-Nous utiliserons le terme \color{red}grader \color{black} pour
-désigner le programme qui réalise ces quatre points.
 
 
 ***
-## Les exercices
+# Les OAV
 
+Les Acquis d'apprentissage visées. 
 
-Les exercices sont des **dictionnaires python** : \
-ensemble (clef, valeur), qui contiennent toute l'information nécessaire à la
-plateforme pour faire jouer l'exercice à l'élève.
-
-
-\bigskip
-
-Une fois l'exercice chargé il n'est plus modifiable. \
-(sauf à être rechargé ce qui peut impliquer des effets de bords)
+- Objectifs de formation
+- Grains de connaissance
+- Mesurables (observables)
+- SMART Specific, Mesurable, Achievable, Realisatic, Temporaly Defined 
 
 ***
-## l'extension
 
-Ces dictionnaires contiennent de nombreuses clefs qu'il est pénible
-d'apprendre pour l'utilisateur débutant et fastidieux à spécifier
-systématiquement. C'est pourquoi un système d'extension (héritage)
-est proposé.
+# Le prof est maitre dans sa classe
 
-\small
+Le responsable de formation n'a accès qu'aux AAV.
+Sauf si le prof lui donne effectivement accès au cours (co-prof,prof non editeur).
 
-```
-    # exercice A.pl
-    text=l'énoncé de l'exercice
-    form= ... 
-    title=Haha 
-```
+Accès aux statistiques mais pas a des informations individuelles.
 
-
-```
-    # exercice B.pl
-    extends@A.pl   # extends=A.pl ancienne syntaxe
-    title=Oh! le B devient un clone du A en 2 clefs.
-```
-\normalsize
-
-***
-## Le dictionnaire résultant 
-
-Le dictionnaire de l'exercice B.pl
-
-\small
-
-
-```json
-    {
-    "text":"l'énoncé de l'exercice",
-    "form":"...",
-    "title":"Oh! le B devient un clone du A en 2 clefs.",
-    }
-```
-
-\normalsize
-
-**Info : **remarquez que vous n'avez pas de déspécialisation de caractères sauf le passage à la ligne 
-
-
-**Info : **l'auteur n'a spécifié que deux clefs en écrivant l'énoncé
-de B mais il a pu possiblement hériter d'un très large contenu situé
-dans les clefs spécifiées dans A.
-
-***
-## Les éléments multi-lignes 
-
-\small
-
-```
-## ceci est un commentaire 
-## exercice avec un énoncé multi ligne 
-
-text==
-l'énoncé de l'exercice
-## cette ligne fait partie de l'énoncé 
-et sera affiché en tant que tel 
-Qui plus est comme l'énoncé est en markdown/latex
-la ligne suivante est un titre avec la fraction a/b !!!
-## $$\frac{a}{b}$$ 
------------------
-==
-
-## la ligne contenant uniquement '==' 
-permet de terminer la balise text
-```
-
-\normalsize
-
-***
-## Un premier exercice : La somme de deux entiers. 
-
-
-* Connexion à la plateforme, passage par LTI.  
-
-* Connectons nous à un LMS client: http://elearning.u-pem.fr   /
- \color{blue} ATTENTION POUR LE TP D'AUJOURD'HUI   
- N'UTILISER PAS VOTRE COMPTE HABITUEL \color{black}  
-
-Login: EssoxLucius1   
-Password: EssoxLucius1  
-
-***
-## Objectif demander un calcul a l'élève
-
-
-```
-title=Calcul d'une somme
-author=Moi / Vous 
-```
-La balise **form** permet d'afficher à l'étudiant un formulaire html.
-Comme ici, nous souhaitons une simple valeur entière, ce formulaire fait partie des 
-formulaires prédéfinis :
-```
-form=@ /form/simplenumeric.html 
-```
-la notation avec @ permet de lire le fichier /lib/form/simplenumeric.html
- et d'affecter son contenu à la clef **form**.
-
-D'autre type d'inputs il sont décrit dans la page suivante: 
-https://www.w3schools.com/tags/tag_input.asp 
-
-***
-## L'énoncé la balise text
-
-
-Nous voulons un énoncé qui dépend de valeurs numériques, l'exemple
-suivant définit deux variables a et b et utilise la syntaxe des 
-template html en calculant le **text** résultant du remplacement de **{{a}}**
-par la valeur de **a**;
-```
-a=12
-b=12
-text="Que vaux la somme de {{a}} et {{b}}" 
-```
-Des substitutions automatiques très pratiques pour les contenus
-dynamiques et aléatoires.
-
-***
-## Évaluation 
-
-
-```
-title=Calcul d'une somme
-author=Moi et Vous
-form=@ /form/simplenumeric.html 
-a=12
-b=12
-text="Que vaux la somme de {{a}} et {{b}}" 
-```
-
-Il ne nous reste maintenant plus qu'a évaluer la réponse de
-l'étudiant. C'est le rôle du grader.
- 
-***
-## Grader
-
-La ligne suivante permet de charger un **grader** préprogrammé qui est
-dans la librairie standard /lib/grader/evaluator.py \
-La syntaxe suivante permet d'ajouter le fichier à l'environnement
-sécurisé de l'exercice.  Dans cet environnement, le fichier
-s'appellera "grader.py".
-
-```
-@ /grader/evaluator.py [grader.py]
-```
-Ce grader est un peu spécifique ; il utilise une balise **evaluator** dans le pl 
-et c'est celle-ci qui contient l'évaluation.
-
-
-Cette balise **evaluator** doit affecter la variable **grade** avec un
-couple ([(-1) à 100], "feedback string") où le premier champs est -1
-(pas d'évaluation) ou un entier de 0 (tout faux) à 100 (tout juste).
-Le deuxième champ est un texte qui est affiché à l'utilisateur une fois
-l'évaluation terminée.
-
-***
-## Un exemple d'**evaluator**
-
-\footnotesize
-
-```python
-evaluator==
-import traceback
-import sys
-
-if response['txt_answer'] == a + b: # evaluation de l'exercice 
-        grade = (100, "Bonne réponse")
-else:
-        grade = (0, "Mauvaise réponse Bonne réponse : "+str(a+b))
-==
-```
-\normalsize
-
-Tout **Python** est disponible dans un grader/evaluator. L'exercice
-est ici simple mais les possibilités de feedback sont infinies.
-
-***
-## Solution complète 
-
-\footnotesize
-
-```python
-title= Calcul de la sommes de deux entiers    
-author= Moi et Vous
-form=@  /form/simplenumeric.html 
-@ /grader/evaluator.py [grader.py]
-
-a=12
-b=12
-text=" Que vaux la somme de {{a}} et {{b}} ?" 
-
-evaluator==
-import traceback
-
-# evaluation de l'exercice 
-if int(response['txt_answer']) == a + b  :
-    grade = (100, "Bonne réponse")
-else:
-    grade = (0, "Mauvaise réponse, la Bonne réponse était: "+str(a+b))
-==
-```
-
-\normalsize
+Boites à moustaches.
 
 
 ***
-## Comment rendre l'exercice aléatoire 
 
-Nous allons ajouter un **builder** qui utilise la balise **before**. 
+# Le futur 
 
-```python
-builder=@ /builder/before.py 
+Le jury est fait avec des AAV.
 
-before==
-import random
-a=random.randint(3,10)
-b=random.randint(3,10)
-==
-```
-Maintenant notre exercice est aléatoire !!
-
-*** 
-
-## Un aléa contrôlé 
-
-
-Un bon exercice avec un aléa controlé vas permettre de fournir une progressions dans la difficulté,
-commencer avec un exercice simple avec un énoncé contenant une description du chemin intellectuel vers la solution.
-Puis progressivement avec les progrès de l'élève des exercices plus durs avec moins d'aide,
-mais toujours autant de feedback sur les erreurs.
-
-
-
-
+***
 
 
 ***
-##  Les inputs  / Les componants.
+## Screen Shots
 
-
-Pour simplifier le travail des développeurs de template nous avons proposé un certain nombre d'inputs préparés, ils sont accessibles dans
-le répertoire /form de la librairie standard.
-
-
-
-
-***
-## Les activités
-
-
-Pour permettre une pédagogie hybride ou l'on mélange le présentiel avec des activités désynchronisées l'enseignant a besoin d'outils de gestions et de suivi des activités.
-
-
-
-Quelques activités individuelles: examen, pomodoro, révision, recommandation, mémorisation, 
-
-Des activités de groupes ou à plusieurs : défis, devoirs maison, ateliers, concours et tournois, projet et problèmes
-
-
-## Outils d'organisation des élèves
-
-Un des coûts administratif d'un enseignement par problèmes est la création des groupes.
-Mécanisme de sélection automatiques de groupes d'élèves,
-- binômes aléatoires, sans remise, par sous groupes de TD,
-- auto-organisation des groupes (chat rooms)
-- organisation par projet avec groupes hétérogènes et un "bon" par groupe
-
-La création d'un groupe créer une zone de travail spécifique au groupe (projet git)
-
-
-
-## Les AAV
-
-
-
-# ScreenShots 
-
-## {.plain}
-\vspace*{-1pt}
-\makebox[\linewidth]{
-    \includegraphics[width=1\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/cours.png}}
-
-
-## {.plain}
-\vspace*{-1pt}
-\makebox[\linewidth]{
-    \includegraphics[width=1\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/chimie.png}}
-
-
-## {.plain}
-\vspace*{-1pt}
-\makebox[\linewidth]{
-    \includegraphics[width=1\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/departements.png}}
-
-
-## {.plain}
-\vspace*{-1pt}
-\makebox[\linewidth]{
-    \includegraphics[width=1\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/dragdrop.png}}
-
-
-## {.plain}
-\vspace*{-1pt}
-\makebox[\linewidth]{
-    \includegraphics[width=1\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/statsducours.png}}
-
-
-## {.plain}
-\vspace*{-1pt}
-\makebox[\linewidth]{
-    \includegraphics[width=1\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/suivieleves.png}}
-
-
-
-## {.plain}
-\vspace*{-1pt}
-\makebox[\linewidth]{
-    \includegraphics[width=1\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/acceuilediteur.png}}
-
-
-## {.plain}
-\vspace*{-1pt}
-\makebox[\linewidth]{
-    \includegraphics[width=1\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/editeur.png}}
-
-## {.plain}
-\vspace*{-1pt}
-\makebox[\linewidth]{
-    \includegraphics[width=1\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/optic.png}}
+% \include{ScreenShots.tex}
