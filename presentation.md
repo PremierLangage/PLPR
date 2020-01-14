@@ -20,44 +20,53 @@ subtitle: exercices autocorrigé répétables
 
 **Des étudiants ** 
 
-- Très hétérogènes (culture, prérequis, méthodes)
-- options de Première et Terminale (NSI)
-- Très Nombreux (L1 dans chaque licences)
-- Ayant de mauvaises stratégies d'apprentissage 
-- Ayant Grands besoins de feedback (réguliers et personnalisés)
-- Souhaitant d'autres pédagogies, désynchronisés, inversés, autonomes 
+- très hétérogènes (culture, prérequis, méthodes)
+- option en Première et Terminale (NSI)
+- très nombreux (L1 dans chaque licences)
+- ayant de mauvaises stratégies d'apprentissage 
+- ayant grands besoins de feedback (réguliers et personnalisés)
+- souhaitant d'autres pédagogies, désynchronisés, inversés, autonomes 
 
 
 **Des enseignants**
 
-- Pas assez nombreux, l'informatique est spécialement sous dotée
-- Pas amateurs de correction de copies 
-- Besoin d'outils de synchronisation pour rationaliser les
+- pas assez nombreux, l'informatique est spécialement sous dotée
+- pas amateurs de correction de copies 
+- ayant besoin d'outils de synchronisation pour rationaliser les
  interventions des grosses équipes pédagogiques
-- Mettre les élèves au **travail** ! qqcvd
+- devant mettre les élèves au **travail** ! qqcvd
 
 
 
-
-# objectifs initiaux de la plateforme PL
+# Objectifs initiaux de la plateforme 
 
 
 + Un outil de suivi des connaissances
-+ mes Echecs productifs
-+ exerciseur
+
++ Mes échecs productifs
+
++ Exerciseur multi-matières
+
 + WIMS, dette
+
 + Répétable
-+ langage de programmation 
+
++ Langage de programmation 
 
 
 
 
-# Objectifs Généraux 
+# Objectif général 
 
-Notre objectif une plateforme évolutive, gratuite, ouverte, partagée et communautaire, basée sur des fondements informatiques et scientifiques solides, une approche didactique et pédagogique inclusive où l’intelligence collective peut s’exprimer à son maximum. 
+Notre objectif est la production d'une plateforme **évolutive**, **gratuite**,
+**ouverte**, **partagée** et **communautaire**, basée sur des **fondements
+informatiques et scientifiques** solides, une **approche didactique et
+pédagogique** inclusive où l’**intelligence collective** peut s’exprimer à
+son maximum.
 
-***
-# Objectifs Généraux 
+
+
+# Objectifs généraux 
 
 + Gratuite 
 
@@ -69,64 +78,71 @@ Notre objectif une plateforme évolutive, gratuite, ouverte, partagée et commun
 
 + Fondement scientifiques solides 
 
-***
+
 
 # Nos principes
 
+- Le patron c'est l'enseignant 
 
-- Le Patron c'est l'enseignant 
 - La compétence disciplinaire prime 
+
 - La liberté pédagogique 
+
 - Solide en terme informatique 
-- Développé par des enseignants et des étudiants
+
+- Développement par des enseignants et des étudiants
+
 - Technologies rationnelles et récentes
+
 - Héritage de l'expérience des projets universitaires
+
 - Intégration dans l'existant (moodle) plutôt que recréer (NIH) 
 
 
-
-***
-
-# une plateforme de qualité 
+# Une plateforme de qualité 
 
 ## Ergonomique 
 Auto-apprentissage de l'usage de la plateforme,
 langage de programmation des exercices simple et extensible,
-Formulaire de création des exercices standards,
+formulaire de création des exercices standards,
 
 ## Fiabilité
-
-La fiabilité est une fonction de l'usage, plus notre logiciel sera utilisé plus il sera fiable (Méthode MS).
+La fiabilité est une fonction de l'usage, plus notre logiciel sera
+utilisé plus il sera fiable (Méthode MS).
 
 ## Efficacité 
+Nos choix techniques : Python3 et le framework Django, ne nous ont pas
+encore trahi.
 
-Nos choix techniques:Python3 et le framework Django, ne nous ont pas encore trahi.
 
-***
+# Une plateforme de qualité 
 
 ## Capacité Fonctionnelle
-
-Nous visons pertinence, exactitude, interopérabilité, sécurité et de conformité.
+Nous visons pertinence, exactitude, interopérabilité, sécurité et
+conformité.
 
 ## Maintenabilité
-
-C'est notre préoccupation première et notre approche est architecturale.
+C'est notre préoccupation première et notre approche est
+architecturale.
 
 ## Portabilité 
+Pour s'éviter des problèmes de gestion de portabilité a travers
+différents systèmes, deux solutions stratégiques (un server de ressources
+central/unique), un déploiement sur docker.
 
-Pour s'éviter des problèmes de gestion de portabilité a travers différents système, deux solutions stratégique (un server de ressource centrale/unique),
-un déploiement sur docker.
-
-
-***
 
 # Objectif 2020
 
-+ Une pédagogie alignée (triforce)
-+ intégration du suivi individuel et collectif
-+ création d'un outil search and compose 
-+ organisation des ressources 
-+ Deux types des serveurs  Assets Resources 
++ Une **pédagogie alignée** (triforce)
+
++ Intégration du **suivi** individuel et collectif
+
++ Création d'un outil **search & compose** 
+
++ Organisation des ressources 
+
++ Deux types des serveurs **Assets** et **Resources**
+
 + Développement de la communauté
 
 
@@ -134,7 +150,7 @@ un déploiement sur docker.
 
 
 \begin{minipage}{8cm}
-\includegraphics[width=0.5\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/triforcePL.png}
+\includegraphics[width=0.5\textwidth]{SCREENSHOTS/triforcePL.png}
 \end{minipage}\hspace{-4cm}\begin{minipage}{6cm}\fbox{\begin{tabular}{@{}c@{}}
  Aquis/Objectifs d'apprentissage \\
  Activité pour l'atteindre \\
@@ -144,46 +160,53 @@ un déploiement sur docker.
 \centering
 Une pédagogie alignée la "triforce".
 
-
 # Notion centrale d'objectifs (OAV, AAV)
 
-La notion d'AAV est basé sur une idée d'objectivation de l'acquisition
- d'une connaissance, un savoir faire, une compétence.
-Pour cela on va exprimer l'objectif de formation sous forme d'une phrase explicitant ce que l'on peut observer cher l'apprenant qui nous permet de valider (automatiquement ou humainement) l'acquisition.
+La notion d'AAV est basé sur une idée d'**objectivation de l'acquisition
+d'une connaissance**, un savoir faire, une compétence.  Pour cela on va
+exprimer l'**objectif** de formation sous forme d'une phrase **explicitant**
+ce que l'on peut **observer** cher l'apprenant qui nous permet de **valider**
+(automatiquement ou humainement) l'acquisition.
 
 
-# Canvas FA2L des AaV
+# Acquis d'Apprentissage Visé (slide FA2L)
 
-\includegraphics[width=0.8\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/canvasAAV.png}
+\includegraphics[width=0.8\textwidth]{SCREENSHOTS/CanvasAAV.png}
 
 
-#  intégration du suivi individuel et collectif
+#  Intégration du suivi individuel et collectif
 
-\includegraphics[width=0.8\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/aavSuivi.png}
+\includegraphics[width=0.8\textwidth]{SCREENSHOTS/aavSuivi.png}
 
 Organisation arborescente. Acquis/en cours/pas acquis/non débuté.
 
 # Idées pour le suivi collectif 
 
-\includegraphics[width=0.8\textwidth]{/Users/dominiquerevuz/DJANGO/plpr/SCREENSHOTS/suiviCollectif.png}
+\includegraphics[width=0.8\textwidth]{SCREENSHOTS/suiviCollectif.png}
 
 
-# organisation des ressources 
+# Organisation des ressources 
 
-Les resources sont partagées CC-by-SA, l'édition concurente est donc possible, 
-la base de donnée gère la concurence par des numéros de version.
-En cas d'édition concurente un éditeur de différences est proposé à l'utilisateur. 
+Les ressources sont partagées en **CC-by-SA**, l'édition concurrente est
+donc possible, la base de données gère la concurrence par des numéros de
+version. En cas d'édition concurrente, un éditeur de différences est
+proposé à l'utilisateur.
 
 Les ressources ont des systèmes de d'étiquetages: 
-- Etiquetage scientifique : ComputerScience/Programming/Python/Functions/Return Value/...
-- Etiquetage de niveau scolaire: cp/ce1/ce2/..../M2/D 
-- Etiquetage de niveau de bloom: reconnaissance/usage/composition/analyse/critique/création
-- Type: lecture, exo, quiz, calcul, raisonnement, composition, etc
 
-# création d'un outil search and compose 
+- **Scientifique** : computerScience/Programming/Python/Functions/Return
+  Value/...
+- Par **niveau scolaire** : cp/ce1/ce2/..../M2/D
+- Par **niveau de bloom** :
+  reconnaissance/usage/composition/analyse/critique/création
+- Par **type** : lecture, exo, quiz, calcul, raisonnement, composition,
+  etc
+
+# Création d'un outil search & compose 
 
 Objectif je suis en cours j'ai besoin d'une ressource sur un sujet.
- J'ai donc déjà rempli en partie l'étiquetage scientifique mon cours est déjà étiqueté : ComputerScience/Programming/Python.
+J'ai donc déjà rempli en partie l'étiquetage scientifique mon cours
+est déjà étiqueté : ComputerScience/Programming/Python.
 
 Je souhaite un exercice ou une feuille.
 
@@ -235,7 +258,7 @@ Le fait que nous ayons des experiences positives:
 
 
 
-***
+
 
 # Utiliser l'intelligence collective 
 
@@ -250,7 +273,7 @@ Définir une éditorialisation efficace qui permet de produire et qualifier les 
 
 
 
-***
+
 
 # PL une plateforme intégrante 
 
@@ -266,7 +289,7 @@ Définir une éditorialisation efficace qui permet de produire et qualifier les 
 * Normalisation des notations 
 * GPL, CC
 
-***
+
 
 # Search & Compose 
 
@@ -278,7 +301,7 @@ Interfaces en fin de présentation
 
 
 
-***
+
 
 # Une communauté 
 
