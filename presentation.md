@@ -194,7 +194,7 @@ Le système cherche soit un AAV soit un exercie soit une feuille.
 Le résultat de la recherche est une liste de ressources.
 Je peux inserer (drag & drop) dans mon cours les ressources qui me conviennent.
 
-Si le resultat est un AAV ili me donne accès au O&R Objectif & Ressource, une partie à la stackoverflow du site.
+Si le resultat est un AAV il me donne accès au O&R Objectif & Ressource, une partie à la stackoverflow du site.
 
 De nouveau je peux récuperer une ressource et la placer dans mon cours.
 
@@ -203,20 +203,35 @@ De nouveau je peux récuperer une ressource et la placer dans mon cours.
 
 
 
-
 # Deux types des serveurs  Assets Resources 
 
-Pour gérer la montée encharge et   
+Pour gérer la montée encharge nous organisons le projet en deux types de serveurs.
 
-+ Développement de la communauté
+Le serveur de ressources qui gère le partage la curation et la distribution des ressources.
+
+Les serveurs d'assets qui permettent de distibuer la charge de l'activité d'enseignement et d'apprentissage. 
+
+  Asset = Instanciation locale d'une Ressource.
+
+-l'exécution des activites
+-Le reporting 
+-le suivi 
+-la gestion 
 
 
-***
-
-# Science de l'éducation
 
 
 
+# Développement de la communauté
+
+C'est une problèmatique sur laquelle nous travaillons en ce moment.
+
+Le fait que nous ayons des experiences positives:
+- pas de plantage du code PL depuis le 15 octobre
+- une fuite de threads (environ 2 par jours) sur la sandbox
+- des étudiants contents (10k summissions en une journée)
+- une écriture d'exercice a améliorer
+- puissance de l'écriture des exercices 
 
 
 
@@ -234,18 +249,6 @@ Définir une éditorialisation efficace qui permet de produire et qualifier les 
 * rôles multiples -> il ne faut pas tout savoir 
 
 
-
-*** 
-
-# Organisation globale 
-
-Pour assurer le partage la création et la curation des Ressources.
-
-Il est nécessaire d'avoir un **serveur National de Ressource** : pl.u-pem.fr
-
-Pour assurer la monté en charge et répartir la gestion administrative du serveur il faut avoir **serveurs locaux d'Assets**. 
-
-  Asset = Instanciation locale d'une Ressource.
 
 ***
 
@@ -270,6 +273,7 @@ Pour assurer la monté en charge et répartir la gestion administrative du serve
 Rapatriment Multi-echelles des Ressources. 
 
 
+Interfaces en fin de présentation 
 
 
 
@@ -367,5 +371,8 @@ Le jury est fait avec des AAV.
 3) Reporting
 4) Constuire son cours dans une formation. 
 5) Participer a une communauté scientifique 
+
+
+
 
 
