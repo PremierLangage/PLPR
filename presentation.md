@@ -250,6 +250,7 @@ Les serveurs d'assets qui permettent de distibuer la charge de l'activité d'ens
 C'est une problèmatique sur laquelle nous travaillons en ce moment.
 
 Le fait que nous ayons des experiences positives:
+
 - pas de plantage du code PL depuis le 15 octobre
 - une fuite de threads (environ 2 par jours) sur la sandbox
 - des étudiants contents (10k summissions en une journée)
