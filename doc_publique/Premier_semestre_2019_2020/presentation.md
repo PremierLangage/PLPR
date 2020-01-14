@@ -55,6 +55,28 @@ autonomie** pour rattraper le peloton. Voici l'entrée dans moodle.
 
 # Exemple de déploiement en L3
 
+*Monsieur, qu'est ce qui faut faire pour réviser ? Non parce que c'est
+dûr et ça va vite...*
+
+* **Avant PL : **
+
+Et bien essayer de refaire doucement les TP chez vous. Tentez de lire
+ce cours ou encore ce cours sur le web (dont je ne connais pas
+totalement les contenus).
+
+* **Avec PL : **
+
+Faites les exercices sous PL et contactez moi si vous avez des
+problèmes. 
+
+  - Je contrôle alors les contenus
+  - Je peux suivre l'activité en temps réel.
+  - Je peux piloter/mesurer/encadrer les révisions et remises à niveau
+    (pointer une ressource)
+
+
+# Exemple de déploiement en L3
+
 Actuellement, une centaine d'exercices déployés et classés dans 12 fiches thématiques :
 
 * Notion de programme
