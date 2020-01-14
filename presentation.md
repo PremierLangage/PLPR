@@ -2,7 +2,7 @@
 ---
 author:
 - Nicolas Borie
-- Olivier Champale
+- Olivier Champalle
 - David Doyen
 - Magdalena Kobylanski
 - Dominique Revuz 
