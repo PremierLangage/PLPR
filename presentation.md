@@ -274,9 +274,13 @@ Définir une éditorialisation efficace qui permet de produire et qualifier les 
 
 
 
+***
+# Platon 2020
+Pour les étudiants : désynchronisation, essai erreur, métacognition (temps, profondeur).
 
+Pour les enseignants : un lieux de rencontre, de ressources (exercices, AAV, activités, évaluations, cours,etc).
 
-# PL une plateforme intégrante 
+#  Platon 2020
 
 * middleware en python3 
 * LTI (interopérabilité des plateformes d'enseignement: moodle, claroline, ...)
@@ -292,62 +296,6 @@ Définir une éditorialisation efficace qui permet de produire et qualifier les 
 
 
 
-# Search & Compose 
-
-Rapatriment Multi-echelles des Ressources. 
-
-
-Interfaces en fin de présentation 
-
-
-
-
-
-
-# Une communauté 
-
-
-Vous si vous le voulez !
-
-https://elearning.u-pem.fr
-
-Compte extérieur 
-login EssoxLucius1 
-password EssoxLucius1 
-
-
-
-
-
-***
-# PL 2
-Pour les étudiants : désynchronisation, essai erreur, métacognition (temps, profondeur).
-
-Pour les enseignants : un lieux de rencontre, de ressources (exercices, AAV, activités, évaluations, cours,etc).
-
-
-
-***
-
-# PL's programming language is Python 
-
-Python is a widely used language: One of the top 5 most used programming languages, with millions of programmers
-“” Google has made no secret of the fact they use Python a lot for a number of internal projects. Even knowing that, once I was an employee, I was amazed at how much Python code there actually is in the Google source code system.””
-Guido van Rossum Creator of Python 
-Thousands of third-party Python packages available: databases, graphics, network, parallel computing, ...
-Easy integration of C/C++/Fortran/...libraries 
-Cython: Python is a major platform for scientific computing
-
-
-
-
-
-
-  
-
-
-
-
 ***
 # Les OAV
 
@@ -358,23 +306,7 @@ Les Acquis d'apprentissage visées.
 - Mesurables (observables)
 - SMART Specific, Mesurable, Achievable, Realisatic, Temporaly Defined 
 
-***
 
-# Le prof est maitre dans sa classe
-
-Le responsable de formation n'a accès qu'aux AAV.
-Sauf si le prof lui donne effectivement accès au cours (co-prof,prof non editeur).
-
-Accès aux statistiques mais pas a des informations individuelles.
-
-Boites à moustaches.
-
-
-***
-
-# Le futur 
-
-Le jury est fait avec des AAV.
 
 ***
 
@@ -396,6 +328,58 @@ Le jury est fait avec des AAV.
 4) Constuire son cours dans une formation. 
 5) Participer a une communauté scientifique 
 
+
+# Search & Compose 
+
+Rapatriment Multi-echelles des Ressources. 
+
+
+Interfaces en fin de présentation 
+
+
+
+
+
+***
+
+# Responsable de formation
+
+Le responsable de formation n'a accès qu'aux AAV.
+Sauf si le prof lui donne effectivement accès au cours (co-prof,prof non editeur).
+
+Accès aux statistiques mais pas a des informations individuelles.
+
+Le jury est fait avec des AAV !
+
+Le RF peut vérifier la cohérence des cours dans la formation et les AATP
+
+Plaquette on one click !!
+
+
+***
+
+
+# Questions 
+
+
+Deux présentations en plus.
+
+* Des maquettes de l'interface utilisateur 
+
+* Comment écrire un exercice 
+
+
+
+# Une communauté 
+
+
+Vous si vous le voulez !
+
+https://elearning.u-pem.fr
+
+Compte extérieur 
+login EssoxLucius1 
+password EssoxLucius1 
 
 
 
