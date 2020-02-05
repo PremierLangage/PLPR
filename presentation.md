@@ -275,12 +275,12 @@ Définir une éditorialisation efficace qui permet de produire et qualifier les 
 
 
 ***
-# Platon 2020
+# PLaTon 2020
 Pour les étudiants : désynchronisation, essai erreur, métacognition (temps, profondeur).
 
 Pour les enseignants : un lieux de rencontre, de ressources (exercices, AAV, activités, évaluations, cours,etc).
 
-#  Platon 2020
+#  PLaTon 2020
 
 * middleware en python3 
 * LTI (interopérabilité des plateformes d'enseignement: moodle, claroline, ...)
@@ -383,4 +383,7 @@ password EssoxLucius1
 
 
 
+# Niveaux d'expertise 
+
+\includegraphics[width=0.8\textwidth]{bloom.jpg}
 
